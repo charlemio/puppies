@@ -1,17 +1,30 @@
 <script>
-	let puppyIndex = 1;
-	let puppyImgUrl = `../static/puppy0${puppyIndex}.jpeg`;
+	import SwipeScreen from '../components/swipeScreen.svelte';
+	import SellScreen from '../components/sellScreen.svelte';
+	import PuppyLists from '../components/puppyLists.svelte';
+	import PuppyPolls from '../components/puppyPolls.svelte';
+	import Tabs from '../shared/tabs.svelte';
 
-	const newPuppy = () => {
-		puppyIndex = (puppyIndex + 1) % 6;
-		puppyImgUrl = `../static/puppy0${puppyIndex}.jpeg`;
+	let items = ['Find A Puppy', 'Sell A Puppy', 'Puppy Lists', 'Puppy Polls'];
+	let activeItem = 'Find A Puppy';
+
+	const tabChange = (e) => {
+		activeItem = e.detail;
 	};
 </script>
 
-<div class="flex flex-col items-center m-4">
-	<div><img src={puppyImgUrl} alt="Cute puppies" class="object-contain h-96" /></div>
-	<button
-		class="w-40 rounded-xl bg-gray-500 hover:bg-gray-400 active:bg-gray-600 m-2 p-2 text-white focus:outline-none"
-		on:click={newPuppy}><strong>New puppy?</strong></button
-	>
+<Tabs {items} {activeItem} on:tabChange={tabChange} />
+<div class="flex flex-col items-center min-h-screen max-w-md ">
+	<br>
+	{#if activeItem === 'Find A Puppy'}
+		<SwipeScreen />
+	{:else if activeItem === 'Sell A Puppy'}
+		<SellScreen />
+	{:else if activeItem === 'Puppy Lists'}
+		<PuppyLists />
+	{:else if activeItem === 'Puppy Polls'}
+		<PuppyPolls />
+	{:else}
+		<p>Something has gone wrong...{activeItem}</p>
+	{/if}
 </div>

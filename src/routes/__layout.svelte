@@ -4,6 +4,8 @@
 	import Header from '../components/header.svelte';
 </script>
 
-<Header />
-<slot />
-<Footer />
+<div class="flex flex-col items-center">
+	<Header />
+	<slot/>
+	<Footer />
+</div>
