@@ -1,4 +1,5 @@
 <script>
+	import { fade } from 'svelte/transition';
 	import Button from '../shared/button.svelte';
 
 	let fields = { question: '', answerA: '', answerB: '' };
@@ -39,7 +40,7 @@
 	};
 </script>
 
-<form class="sm:text-lg sm:p-8" on:submit|preventDefault={submitHandler}>
+<form in:fade="{{duration: 200}}" class="sm:text-lg sm:p-8" on:submit|preventDefault={submitHandler}>
 	<div class="form-field">
 		<label for="question">Poll Question:</label>
 		<input type="text" id="question" bind:value={fields.question} placeholder={errors.question} />

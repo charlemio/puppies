@@ -1,1 +1,0 @@
-<p class="px-8 max-w-md">Do you want to get rid of your puppy? Post a picture of your puppy and find out how many golden nuggets you can get for it.</p>
