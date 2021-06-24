@@ -1,6 +1,6 @@
 <script>
-	const whiteImageUrl = '../static/puppyLight.svg';
-	const blackImageUrl = '../static/puppy.svg';
+	const whiteImageUrl = '/puppyLight.svg';
+	const blackImageUrl = '/puppy.svg';
 </script>
 
 <header class="flex flex-col items-center mx-8 pt-2 z-20 text-center text-xl text-black">

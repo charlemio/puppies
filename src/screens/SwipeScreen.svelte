@@ -3,12 +3,12 @@
 	import { Swipeable, Screen, } from 'buhrmi';
 
 	let images = [
-		{ url: '../static/puppy00.jpeg' },
-		{ url: '../static/puppy01.jpeg' },
-		{ url: '../static/puppy02.jpeg' },
-		{ url: '../static/puppy03.jpeg' },
-		{ url: '../static/puppy04.jpeg' },
-		{ url: '../static/puppy05.jpeg' }
+		{ url: '/puppy00.jpeg' },
+		{ url: '/puppy01.jpeg' },
+		{ url: '/puppy02.jpeg' },
+		{ url: '/puppy03.jpeg' },
+		{ url: '/puppy04.jpeg' },
+		{ url: '/puppy05.jpeg' }
 	];
 </script>
 

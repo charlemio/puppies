@@ -5,31 +5,31 @@
 <div in:fade="{{duration: 200}}" class="text-left mx-5">
 	<h1>The uggliest puppy:</h1>
 
-	<img src="../static/puppy01.jpeg" alt="uggly puppy" />
+	<img src="/puppy01.jpeg" alt="uggly puppy" />
 
 	<hr />
 
 	<h1>The most bullied puppy:</h1>
 
-	<img src="../static/puppy00.jpeg" alt="bullied puppy" />
+	<img src="/puppy00.jpeg" alt="bullied puppy" />
 
 	<hr />
 
 	<h1>The most retarded:</h1>
 
-	<img src="../static/puppy04.jpeg" alt="retarded puppy" />
+	<img src="/puppy04.jpeg" alt="retarded puppy" />
 
 	<hr />
 
 	<h1>The cuuuuutiiiiest:</h1>
 
-	<img src="../static/puppy03.jpeg" alt="cutest puppy" />
+	<img src="/puppy03.jpeg" alt="cutest puppy" />
 
 	<hr />
 
 	<h1>The most expensive puppy:</h1>
 
-	<img src="../static/puppy02.jpeg" alt="expensive puppy" />
+	<img src="/puppy02.jpeg" alt="expensive puppy" />
 </div>
 
 <style>
