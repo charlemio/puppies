@@ -13,17 +13,17 @@
 
 		
 
-		<link rel="modulepreload" href="/./_app/start-a5004b86.js">
+		<link rel="modulepreload" href="/./_app/start-fe281e24.js">
 		<link rel="modulepreload" href="/./_app/chunks/vendor-1540f193.js">
-		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-ddd4681e.js">
-		<link rel="modulepreload" href="/./_app/pages/index.svelte-3cf112e5.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-e77c68c6.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-846a668f.js">
 		<link rel="stylesheet" href="/./_app/assets/start-a97448ed.css">
 		<link rel="stylesheet" href="/./_app/assets/vendor-b5c8cf01.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-b50531fe.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-51825280.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-2a921e99.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-826fcd5c.css">
 
 		<script type="module">
-			import { start } from "/./_app/start-a5004b86.js";
+			import { start } from "/./_app/start-fe281e24.js";
 			start({
 				target: document.body,
 				paths: {"base":"","assets":"/."},
@@ -36,8 +36,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./_app/pages/__layout.svelte-ddd4681e.js"),
-						import("/./_app/pages/index.svelte-3cf112e5.js")
+						import("/./_app/pages/__layout.svelte-e77c68c6.js"),
+						import("/./_app/pages/index.svelte-846a668f.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -54,35 +54,30 @@
 	<div id="svelte">
 
 
-<div class="flex flex-col items-center"><header class="flex flex-col items-center mx-8 pt-2 z-20 text-center text-xl text-black">
+<div class="flex flex-col items-center"><div class="tabs sticky top-0 mx-0 z-20 px-2  sm:pb-0 mb-2 border-b-2 rounded border-red-200 bg-white bg-opacity-25 w-10/12 max-w-md svelte-t5vlxo"><ul class="flex justify-center p-0 list-none text-center"><li class="p-0 m-0 sm:mx-0.5 cursor-pointer select-none text-black hover:text-red-400 hover:bg-red-50 svelte-t5vlxo active">Find A Puppy
+	</li><li class="p-0 m-0 sm:mx-0.5 cursor-pointer select-none text-black hover:text-red-400 hover:bg-red-50 svelte-t5vlxo  nonactive">Sell A Puppy
+	</li><li class="p-0 m-0 sm:mx-0.5 cursor-pointer select-none text-black hover:text-red-400 hover:bg-red-50 svelte-t5vlxo  nonactive">Puppy Lists
+	</li><li class="p-0 m-0 sm:mx-0.5 cursor-pointer select-none text-black hover:text-red-400 hover:bg-red-50 svelte-t5vlxo  nonactive">Add Poll
+	</li></ul>
+</div>
+<header class="flex flex-col items-center mx-8 pt-2 z-10 text-center text-xl text-black pointer-events-none">
 	<img src="/puppy.svg" alt="Cute puppy" class="object-contain w-20">
 	
 	<h1 class="text-3xl font-extrabold svelte-1k5nzce">PUPPY LAND</h1>
 	<hr class="w-64  rounded-xl border-t-8 border-black">
+	<p class="text-sm">It&#39;s tinder... but puppies</p>
 	
 </header>
-	<div class="tabs sticky top-0 mx-0 z-10 px-2 sm:p-4  sm:pb-0 mt-2 mb-2 border-b-2 rounded-b-2xl rounded-t-lg border-red-200 bg-white bg-opacity-25 svelte-7o9efu"><ul class="flex justify-center p-0 list-none text-center"><li class="p-0 m-0 sm:mx-0.5 cursor-pointer select-none text-black hover:text-red-400 hover:bg-red-50 svelte-7o9efu active">Find A Puppy
-	</li><li class="p-0 m-0 sm:mx-0.5 cursor-pointer select-none text-black hover:text-red-400 hover:bg-red-50 svelte-7o9efu  nonactive">Sell A Puppy
-	</li><li class="p-0 m-0 sm:mx-0.5 cursor-pointer select-none text-black hover:text-red-400 hover:bg-red-50 svelte-7o9efu  nonactive">Puppy Lists
-	</li><li class="p-0 m-0 sm:mx-0.5 cursor-pointer select-none text-black hover:text-red-400 hover:bg-red-50 svelte-7o9efu  nonactive">Add Poll
-	</li></ul>
-</div>
-<div class="flex flex-col items-center min-h-screen max-w-md "><br>
-	<h1 class="z-20 fixed bottom-4 text-xl p-0 m-0 mx-auto text-center font-extrabold text-white">Would you buy this puppy?</h1>
+<div class="flex flex-col items-center max-w-md "><br>
+	<h1 class="z-20 fixed bottom-4 text-xl p-0 m-0 mx-auto text-center text-white pointer-events-none">Would you buy this puppy?</h1>
 <div id="black-bg" class="fixed bg-black z-0 w-full h-full top-0"></div>
 <div id="top-gradient" class="fixed z-10 pointer-events-none top-0 w-full h-32 bg-gradient-to-b from-black to-transparent opacity-0"></div>
 <div id="bot-gradient" class="fixed z-10 pointer-events-none bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
-<div class="select-none"><div class="container svelte-yrqvqn"><div class="swipeable horizontal svelte-1whbb5x"><div class="images"><div class="screen svelte-1o7ubjf" style="left: 0%;"><img class="img svelte-yrqvqn" src="/puppy00.jpeg" alt="puppy">
+<div class="select-none"><div class="container svelte-yrqvqn"><div class="swipeable horizontal svelte-1whbb5x"><div class="images"><div class="screen svelte-1o7ubjf" style="left: 0%;"><img class="img svelte-yrqvqn" src="/puppy03.jpeg" alt="puppy">
 			
 </div><div class="screen svelte-1o7ubjf" style="left: 100%;"><img class="img svelte-yrqvqn" src="/puppy01.jpeg" alt="puppy">
 			
 </div><div class="screen svelte-1o7ubjf" style="left: 200%;"><img class="img svelte-yrqvqn" src="/puppy02.jpeg" alt="puppy">
-			
-</div><div class="screen svelte-1o7ubjf" style="left: 300%;"><img class="img svelte-yrqvqn" src="/puppy03.jpeg" alt="puppy">
-			
-</div><div class="screen svelte-1o7ubjf" style="left: 400%;"><img class="img svelte-yrqvqn" src="/puppy04.jpeg" alt="puppy">
-			
-</div><div class="screen svelte-1o7ubjf" style="left: 500%;"><img class="img svelte-yrqvqn" src="/puppy05.jpeg" alt="puppy">
 			
 </div></div>
 </div></div>
